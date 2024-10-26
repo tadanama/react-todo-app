@@ -1,7 +1,9 @@
+import { useState } from "react";
 import TodoForm from "./components/TodoForm";
 import "./index.css";
 
 function App() {
+    const [todo, setTodo] = useState([]);
 	return (
 		<>
 			<div className="wrapper">
