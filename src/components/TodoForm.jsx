@@ -20,6 +20,7 @@ function TodoForm({ onAdd }) {
 				name="todoText"
 				value={inputText}
 				onChange={handleChange}
+                autoComplete="off"
 			/>
 			<button type="submit">Add</button>
 		</form>
