@@ -7,9 +7,15 @@
 .wrapper {
   border: 2px solid red;
   width: 50%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-inline: auto;
   padding: 1.5rem;
+  text-align: center;
+}
+
+.wrapper h1,
+.wrapper form {
+  margin-bottom: 1.5rem;
 }
 
 .wrapper li {
