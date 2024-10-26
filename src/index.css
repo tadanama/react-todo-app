@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  border: 2px solid red;
+  width: 50%;
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding: 1.5rem;
+}
