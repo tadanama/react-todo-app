@@ -1,3 +1,4 @@
+import TodoForm from "./components/TodoForm";
 import "./index.css";
 
 function App() {
@@ -6,10 +7,7 @@ function App() {
 			<div className="wrapper">
 				<h1>What should we do today?</h1>
 
-				<form action="#">
-					<input type="text" name="todoText" />
-					<button type="submit">Add</button>
-				</form>
+                <TodoForm />
 
 				<ul>
 					<li>
