@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TodoForm() {
+function TodoForm({ onAdd }) {
 	const [inputText, setInputText] = useState("");
 
 	function handleChange(event) {
@@ -10,7 +10,11 @@ function TodoForm() {
 	}
 
 	return (
-		<form>
+		<form onSubmit={(event) => {
+            event.preventDefault();
+            onAdd(inputText);
+            setInputText("");
+        }}>
 			<input
 				type="text"
 				name="todoText"
