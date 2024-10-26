@@ -11,14 +11,19 @@ function App() {
 			return [...previousTodo, newTodo];
 		});
 	}
+
+	function deleteTodo(id) {
+		setTodo((previousTodo) => {
+			return previousTodo.filter((todo, index) => index !== id);
+		});
+	}
 	return (
 		<>
 			<div className="wrapper">
 				<h1>What should we do today?</h1>
 
 				<TodoForm onAdd={addTodo} />
-                <TodoList todos={todo} />
-				
+				<TodoList todos={todo} onDelete={deleteTodo} />
 			</div>
 		</>
 	);
