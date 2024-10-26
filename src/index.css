@@ -18,6 +18,21 @@
   margin-bottom: 1.5rem;
 }
 
+.wrapper form {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.wrapper  form  input {
+  margin-right: 1.5rem;
+  width: 300px;
+  padding: 5px;
+}
+
+.wrapper form button {
+  padding: 5px 15px;
+}
+
 .wrapper li {
   list-style: none;
   display: flex;
