@@ -1,9 +1,47 @@
-import "./index.css"
+import "./index.css";
 
 function App() {
 	return (
 		<>
-			<h1>This is the starting point</h1>
+			<div className="wrapper">
+				<h1>What should we do today?</h1>
+
+				<form action="#">
+					<input type="text" name="todoText" />
+					<button type="submit">Add</button>
+				</form>
+
+				<ul>
+					<li>
+						<p>Todo 1</p>
+						<div className="action-button">
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</li>
+					<li>
+						<p>Todo 2</p>
+						<div className="action-button">
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</li>
+                    <li>
+						<p>Todo 3</p>
+						<div className="action-button">
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</li>
+                    <li>
+						<p>Todo 4</p>
+						<div className="action-button">
+							<button>Edit</button>
+							<button>Delete</button>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</>
 	);
 }
