@@ -11,3 +11,9 @@
   margin-inline: auto;
   padding: 1.5rem;
 }
+
+.wrapper li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
